@@ -1,0 +1,77 @@
+unit uSubstitui;
+
+interface
+
+uses
+  uISubstitui, Classes, Sysutils;
+
+type
+
+  TSubstitui = class(TInterfacedObject, ISubstitui)
+  public
+    function Substituir(aStr, aVelho, aNovo: String): String;
+  end;
+
+implementation
+
+function TSubstitui.Substituir(aStr, aVelho, aNovo: String): String;
+var
+  I, vIndex: integer;
+  vIControle, vTamanho, vDifer: integer;
+  vPedaco, vResultado: string;
+  vListaResultado: TStringList;
+begin
+  vIControle := 1;
+  vPedaco := '';
+  vResultado := '';
+  I := 1;
+  vListaResultado := TStringList.Create;
+  while I <= Length(aStr) do
+    begin
+      if (vPedaco = '') then
+        vPedaco := aStr[I]
+      else
+        vPedaco := vPedaco + aStr[I];
+      if (Length(vPedaco) = Length(aVelho)) then
+      begin
+        if (vPedaco = aVelho) then
+        begin
+          vListaResultado.Add(inttostr(I-Length(vPedaco)+1)+'='+vPedaco);
+        end;
+        vPedaco := '';
+        I := vIControle;
+        inc(vIControle);
+      end;
+      inc(I);
+    end;
+  vTamanho := Length(aStr);
+  I := 1;
+  while I <= vTamanho do
+    begin
+      vIndex := vListaResultado.IndexOfName(inttostr(I));
+      if (vIndex = -1) then
+      begin
+        if (vResultado = '') then
+          vResultado := aStr[I]
+        else
+          vResultado := vResultado + aStr[I];
+      end
+      else
+      begin
+        vResultado := vResultado + aNovo;
+        vDifer := (length(aNovo) - Length(aVelho));
+        if (vDifer < 0) then
+          vDifer := vDifer * -1;
+        vDifer := vDifer * 3;
+        I := (I + vDifer);
+        vTamanho := (vTamanho + Length(aNovo)) - Length(aVelho);
+//        if (vTamanho > Length(aStr)) then
+//          I := vTamanho;
+      end;
+      inc(I);
+    end;
+  result := vResultado;
+end;
+  
+end.
+

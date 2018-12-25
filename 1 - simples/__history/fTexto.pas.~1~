@@ -1,0 +1,27 @@
+unit fTexto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmTexto = class(TForm)
+    txtTexto: TEdit;
+    memoResultado: TMemo;
+    Button1: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTexto: TfrmTexto;
+
+implementation
+
+{$R *.dfm}
+
+end.

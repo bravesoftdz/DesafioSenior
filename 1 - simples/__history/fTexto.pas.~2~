@@ -1,0 +1,39 @@
+unit fTexto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmTexto = class(TForm)
+    txtTexto: TEdit;
+    memoResultado: TMemo;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTexto: TfrmTexto;
+
+implementation
+
+uses uSubstitui;
+
+{$R *.dfm}
+
+procedure TfrmTexto.Button1Click(Sender: TObject);
+var
+  vResultado: string;
+begin
+  memoResultado.Lines.Clear;
+  vResultado := TSubstitui.Substituir(txtTexto.Text, 'roeu', 'teste');
+  memoResultado.Lines.Add(vResultado);
+end;
+
+end.

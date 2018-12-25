@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/22 20:06:29.000.911,=C:\Users\win\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/22 20:07:45.000.476,=C:\Users\win\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/22 20:14:31.000.321,=C:\Users\win\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/22 20:16:03.000.837,=C:\Users\win\Documents\Prova-Delphi\2 - média resposta\uIMaquina.pas</Transaction>
+    <Transaction>2018/12/22 20:16:03.000.901,=C:\Users\win\Documents\Prova-Delphi\2 - média resposta\uTroco.pas</Transaction>
+    <Transaction>2018/12/22 20:16:03.000.869,=C:\Users\win\Documents\Prova-Delphi\2 - média resposta\uMaquina.pas</Transaction>
+    <Transaction>2018/12/22 20:16:41.000.246,C:\Users\win\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\win\Documents\Prova-Delphi\2 - média resposta\fResposta.dfm</Transaction>
+    <Transaction>2018/12/22 20:16:41.000.246,C:\Users\win\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\win\Documents\Prova-Delphi\2 - média resposta\fResposta.pas</Transaction>
+    <Transaction>2018/12/22 20:16:52.000.008,C:\Users\win\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\win\Documents\Prova-Delphi\2 - média resposta\MediaResposta.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

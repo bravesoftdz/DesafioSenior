@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/24 16:42:33.000.583,=C:\Users\win\Documents\Prova-Delphi\1 - simples\Unit1.pas</Transaction>
+    <Transaction>2018/12/24 16:45:14.000.177,C:\Users\win\Documents\Prova-Delphi\1 - simples\fTexto.pas=C:\Users\win\Documents\Prova-Delphi\1 - simples\Unit1.pas</Transaction>
+    <Transaction>2018/12/24 16:45:14.000.177,C:\Users\win\Documents\Prova-Delphi\1 - simples\fTexto.dfm=C:\Users\win\Documents\Prova-Delphi\1 - simples\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
